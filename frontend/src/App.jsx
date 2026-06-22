@@ -270,7 +270,7 @@ function App() {
           <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-purple-300/20 blur-3xl" />
           <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5">
             <img
-              src="/profile-photo.png"
+              src="/profile-photo.jpg"
               alt={`${profile.name} graduation portrait`}
               className="mx-auto h-48 w-48 rounded-full border border-purple-200/40 bg-slate-900 object-cover object-[center_18%] shadow-2xl shadow-purple-950/40"
             />
