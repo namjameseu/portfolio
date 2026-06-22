@@ -114,6 +114,8 @@ const initialContactForm = {
   message: '',
 }
 
+const encodeFormData = (data) => new URLSearchParams(data).toString()
+
 function App() {
   const [profile, setProfile] = useState(fallbackProfile)
   const [skills, setSkills] = useState(fallbackSkills)
@@ -171,26 +173,25 @@ function App() {
     setContactStatus({ type: 'loading', message: 'Sending your message...' })
 
     try {
-      const response = await fetch(`${API_BASE_URL}/contact`, {
+      const response = await fetch('/', {
         method: 'POST',
         headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(contactForm),
+        body: encodeFormData({
+          'form-name': 'contact',
+          ...contactForm,
+        }),
       })
 
-      const data = await response.json().catch(() => ({}))
-
       if (!response.ok) {
-        const validationMessage = data?.message ?? 'Please check the form and try again.'
-        throw new Error(validationMessage)
+        throw new Error('Please check the form and try again.')
       }
 
       setContactForm(initialContactForm)
       setContactStatus({
         type: 'success',
-        message: data?.message ?? 'Thanks for reaching out. I will get back to you soon.',
+        message: 'Thanks for reaching out. I will get back to you soon.',
       })
     } catch (error) {
       setContactStatus({
