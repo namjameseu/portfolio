@@ -162,6 +162,17 @@ function App() {
     setContactForm((currentForm) => ({ ...currentForm, [name]: value }))
   }
 
+  const handleContactSubmit = (event) => {
+    event.preventDefault()
+
+    const subject = encodeURIComponent(contactForm.subject || 'Portfolio contact')
+    const body = encodeURIComponent(
+      `Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`,
+    )
+
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+  }
+
   const socialLinks = [
     { label: 'LinkedIn', href: linkedin },
     { label: 'GitHub', href: github },
@@ -378,13 +389,9 @@ function App() {
           </div>
 
           <form
-            name="contact"
-            method="POST"
-            action="/"
-            data-netlify="true"
+            onSubmit={handleContactSubmit}
             className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
           >
-            <input type="hidden" name="form-name" value="contact" />
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Name" name="name" value={contactForm.name} onChange={handleContactChange} />
               <Field label="Email" name="email" type="email" value={contactForm.email} onChange={handleContactChange} />
