@@ -419,7 +419,15 @@ function App() {
             </div>
           </div>
 
-          <form onSubmit={handleContactSubmit} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+          <form
+            name="contact"
+            method="POST"
+            action="/"
+            data-netlify="true"
+            onSubmit={handleContactSubmit}
+            className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Name" name="name" value={contactForm.name} onChange={handleContactChange} />
               <Field label="Email" name="email" type="email" value={contactForm.email} onChange={handleContactChange} />
