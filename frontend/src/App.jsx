@@ -114,15 +114,12 @@ const initialContactForm = {
   message: '',
 }
 
-const encodeFormData = (data) => new URLSearchParams(data).toString()
-
 function App() {
   const [profile, setProfile] = useState(fallbackProfile)
   const [skills, setSkills] = useState(fallbackSkills)
   const [projects, setProjects] = useState(fallbackProjects)
   const [isLoading, setIsLoading] = useState(true)
   const [contactForm, setContactForm] = useState(initialContactForm)
-  const [contactStatus, setContactStatus] = useState({ type: 'idle', message: '' })
 
   useEffect(() => {
     const loadPortfolioData = async () => {
@@ -145,10 +142,7 @@ function App() {
           setProjects(await projectsResponse.json())
         }
       } catch {
-        setContactStatus({
-          type: 'info',
-          message: 'Showing fallback content until the Laravel API is running locally.',
-        })
+        // Fallback content remains visible when the optional API is unavailable.
       } finally {
         setIsLoading(false)
       }
@@ -166,42 +160,6 @@ function App() {
   const handleContactChange = (event) => {
     const { name, value } = event.target
     setContactForm((currentForm) => ({ ...currentForm, [name]: value }))
-  }
-
-  const handleContactSubmit = async (event) => {
-    event.preventDefault()
-    setContactStatus({ type: 'loading', message: 'Sending your message...' })
-
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: encodeFormData({
-          'form-name': 'contact',
-          ...contactForm,
-        }),
-      })
-
-      if (!response.ok) {
-        throw new Error('Please check the form and try again.')
-      }
-
-      setContactForm(initialContactForm)
-      setContactStatus({
-        type: 'success',
-        message: 'Thanks for reaching out. I will get back to you soon.',
-      })
-    } catch (error) {
-      setContactStatus({
-        type: 'error',
-        message:
-          error instanceof Error
-            ? error.message
-            : 'Unable to send your message right now.',
-      })
-    }
   }
 
   const socialLinks = [
@@ -422,9 +380,8 @@ function App() {
           <form
             name="contact"
             method="POST"
-            action="/"
+            action="/success.html"
             data-netlify="true"
-            onSubmit={handleContactSubmit}
             className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
           >
             <input type="hidden" name="form-name" value="contact" />
@@ -436,20 +393,10 @@ function App() {
             <Field label="Message" name="message" value={contactForm.message} onChange={handleContactChange} multiline />
             <button
               type="submit"
-              disabled={contactStatus.type === 'loading'}
               className="mt-5 rounded-full bg-purple-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-purple-200 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {contactStatus.type === 'loading' ? 'Sending...' : 'Send Message'}
+              Send Message
             </button>
-            {contactStatus.message && (
-              <p
-                className={`mt-4 text-sm ${
-                  contactStatus.type === 'error' ? 'text-red-300' : 'text-purple-100'
-                }`}
-              >
-                {contactStatus.message}
-              </p>
-            )}
           </form>
         </div>
       </Section>
