@@ -167,23 +167,21 @@ function App() {
     setContactForm((currentForm) => ({ ...currentForm, [name]: value }))
   }
 
-  const handleContactSubmit = (event) => {
-    event.preventDefault()
-
-    const subject = encodeURIComponent(contactForm.subject || 'Portfolio contact')
-    const body = encodeURIComponent(
-      `Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`,
-    )
-
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
-  }
-
   const socialLinks = [
     { label: 'LinkedIn', href: linkedin },
     { label: 'GitHub', href: github },
     { label: 'Email', href: `mailto:${email}` },
     { label: 'Resume', href: resumeUrl, download: true },
   ].filter((link) => Boolean(link.href))
+
+  const contactMailtoHref = useMemo(() => {
+    const subject = encodeURIComponent(contactForm.subject || 'Portfolio contact')
+    const body = encodeURIComponent(
+      `Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`,
+    )
+
+    return `mailto:${email}?subject=${subject}&body=${body}`
+  }, [contactForm, email])
 
   return (
     <main className="relative min-h-screen overflow-hidden">
@@ -393,23 +391,20 @@ function App() {
             </div>
           </div>
 
-          <form
-            onSubmit={handleContactSubmit}
-            className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
-          >
+          <div className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Name" name="name" value={contactForm.name} onChange={handleContactChange} />
               <Field label="Email" name="email" type="email" value={contactForm.email} onChange={handleContactChange} />
             </div>
             <Field label="Subject" name="subject" value={contactForm.subject} onChange={handleContactChange} />
             <Field label="Message" name="message" value={contactForm.message} onChange={handleContactChange} multiline />
-            <button
-              type="submit"
-              className="mt-5 rounded-full bg-purple-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-purple-200 disabled:cursor-not-allowed disabled:opacity-60"
+            <a
+              href={contactMailtoHref}
+              className="mt-5 inline-flex rounded-full bg-purple-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-purple-200"
             >
               Send Message
-            </button>
-          </form>
+            </a>
+          </div>
         </div>
       </Section>
     </main>
