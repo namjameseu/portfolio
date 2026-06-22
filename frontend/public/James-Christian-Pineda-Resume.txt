@@ -1,0 +1,34 @@
+James Christian Pineda
+Full-Stack Developer
+Central Luzon, Philippines
+
+Email: pinedajames679@gmail.com
+LinkedIn: https://www.linkedin.com/in/james-christian-pineda/
+GitHub: https://github.com/namjameseu
+
+SUMMARY
+Full-stack developer building practical web applications with React, Laravel, Node.js, REST APIs, and MySQL. Experienced in production support, CI/CD workflows, database migrations, deployments, and AI-assisted development.
+
+CORE SKILLS
+- Frontend: React.js, TypeScript, Tailwind CSS, Material UI, Ant Design
+- Backend: Laravel, PHP, Node.js, REST APIs
+- Database: MySQL, PostgreSQL
+- Tools and DevOps: Git, CI/CD workflows, AWS, Cursor, ChatGPT
+
+EXPERIENCE
+Shore360, Inc. - Full-Stack Developer
+Feb 2024 - Present | Clark, Pampanga, Philippines
+- Developed and maintained full-stack features for client and staff management workflows.
+- Built and supported React, Node.js, MySQL, and REST API features.
+- Managed staging and production deployments, migrations, and rollback support.
+- Used AI-assisted workflows to speed up debugging, SQL optimization, documentation, and prototyping.
+
+Pampanga State University - Team Leader / Frontend Mobile Developer
+May 2023 - Dec 2023 | Mexico, Pampanga
+- Led a capstone team through planning, risk tracking, and delivery.
+- Built mobile frontend features with React Native.
+
+EDUCATION
+Pampanga State University - Mexico Campus
+B.S. in Information Technology, Cum Laude
+2020 - 2024

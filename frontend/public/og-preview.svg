@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">James Christian Pineda portfolio preview</title>
+  <desc id="desc">Social preview for a full-stack developer portfolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1200" y1="0" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f0b1d"/>
+      <stop offset="0.5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(420 0 0 420 885 150)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c4b5fd" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#c4b5fd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1005" cy="445" r="220" fill="#a855f7" opacity="0.16"/>
+  <rect x="80" y="78" width="1040" height="474" rx="44" fill="#0f172a" opacity="0.74" stroke="#d8b4fe" stroke-opacity="0.24"/>
+  <text x="120" y="170" fill="#d8b4fe" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="8">FULL-STACK DEVELOPER</text>
+  <text x="120" y="278" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="900">James Christian</text>
+  <text x="120" y="360" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="900">Pineda</text>
+  <text x="124" y="430" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="30">React " Laravel " Node.js " MySQL " REST APIs</text>
+  <g transform="translate(836 172)">
+    <rect width="212" height="212" rx="64" fill="#581c87" opacity="0.88"/>
+    <circle cx="106" cy="106" r="74" fill="none" stroke="#d8b4fe" stroke-width="8"/>
+    <text x="106" y="132" fill="#ecfeff" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="900" text-anchor="middle">JCP</text>
+  </g>
+  <g fill="#d8b4fe" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">
+    <text x="124" y="500">Available for full-stack work</text>
+    <text x="480" y="500">2+ years production experience</text>
+  </g>
+</svg>
