@@ -380,7 +380,7 @@ function App() {
           <form
             name="contact"
             method="POST"
-            action="/success.html"
+            action="/"
             data-netlify="true"
             className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
           >
