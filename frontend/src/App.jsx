@@ -174,13 +174,13 @@ function App() {
     { label: 'Resume', href: resumeUrl, download: true },
   ].filter((link) => Boolean(link.href))
 
-  const contactMailtoHref = useMemo(() => {
+  const contactComposeHref = useMemo(() => {
     const subject = encodeURIComponent(contactForm.subject || 'Portfolio contact')
     const body = encodeURIComponent(
       `Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`,
     )
 
-    return `mailto:${email}?subject=${subject}&body=${body}`
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${subject}&body=${body}`
   }, [contactForm, email])
 
   return (
@@ -399,7 +399,9 @@ function App() {
             <Field label="Subject" name="subject" value={contactForm.subject} onChange={handleContactChange} />
             <Field label="Message" name="message" value={contactForm.message} onChange={handleContactChange} multiline />
             <a
-              href={contactMailtoHref}
+              href={contactComposeHref}
+              target="_blank"
+              rel="noreferrer"
               className="mt-5 inline-flex rounded-full bg-purple-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-purple-200"
             >
               Send Message
