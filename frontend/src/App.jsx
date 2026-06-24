@@ -11,12 +11,12 @@ const fallbackProfile = {
   github: 'https://github.com/namjameseu',
   resumeUrl: '/James-Christian-Pineda-Resume.txt',
   summary:
-    'Full-stack developer building practical web applications with React, Laravel, Node.js, REST APIs, and MySQL. Experienced in production support, CI/CD workflows, database migrations, deployments, and AI-assisted development.',
+    'I build practical web applications across React, Laravel, Node.js, REST APIs, and MySQL, with hands-on experience supporting releases, database migrations, deployments, and production workflows.',
   highlights: [
-    '2+ years of full-stack development experience',
-    'React, Laravel, Node.js, REST API, and MySQL delivery',
-    'Hands-on staging and production deployment experience',
-    'Cum Laude B.S. Information Technology graduate',
+    'Production-minded full-stack development across frontend, backend, and database layers',
+    'Comfortable with staging releases, migrations, rollback support, and support workflows',
+    'Strong React, Laravel, Node.js, REST API, and MySQL delivery foundation',
+    'Cum Laude B.S. Information Technology graduate with team leadership experience',
   ],
   experience: [
     {
@@ -25,20 +25,27 @@ const fallbackProfile = {
       period: 'Feb 2024 - Present',
       location: 'Clark, Pampanga, Philippines',
       achievements: [
-        'Developed and maintained full-stack features for client and staff management workflows.',
-        'Built and supported React, Node.js, MySQL, and REST API features.',
-        'Managed staging and production deployments, migrations, and rollback support.',
+        'Developed and maintained full-stack features that support client and staff management workflows.',
+        'Built and supported React, Node.js, MySQL, and REST API features used in day-to-day operations.',
+        'Handled staging and production deployments, database migrations, release checks, and rollback support.',
       ],
     },
     {
-      company: 'Pampanga State University',
+      company: 'Capstone/Thesis Project',
       role: 'Team Leader / Frontend Mobile Developer',
       period: 'May 2023 - Dec 2023',
-      location: 'Mexico, Pampanga',
+      location: 'Pampanga State University',
       achievements: [
-        'Led a capstone team through planning, risk tracking, and delivery.',
-        'Built mobile frontend features with React Native.',
+        'Led a capstone team through planning, task coordination, risk tracking, and delivery milestones.',
+        'Built React Native mobile frontend features while coordinating progress across the team.',
       ],
+    },
+    {
+      company: 'VXI',
+      role: 'Intern',
+      period: 'Jan 2020',
+      location: 'Clark, Pampanga, Philippines',
+      achievements: ['Assisted applicants with digital registration, ensuring smooth onboarding.'],
     },
   ],
   education: [
@@ -48,18 +55,33 @@ const fallbackProfile = {
       period: '2020 - 2024',
       honor: 'Cum Laude',
     },
+    {
+      school: 'Systems Plus College Foundation - Miranda Branch',
+      degree: 'Senior High School',
+      period: '2018 - 2020',
+      honor: 'With High Honors',
+    },
+    {
+      school: 'Don Jesus Gonzales High School',
+      degree: 'Junior High School',
+      period: '2014 - 2018',
+      honor: 'With Honors',
+    },
   ],
 }
 
 const fallbackSkills = {
   Frontend: [
     { name: 'React.js', proficiency: 92 },
+    { name: 'Next.js', proficiency: 82 },
     { name: 'TypeScript', proficiency: 86 },
     { name: 'Tailwind CSS', proficiency: 88 },
     { name: 'Material UI', proficiency: 82 },
+    { name: 'Ant Design', proficiency: 80 },
   ],
   Backend: [
     { name: 'Laravel', proficiency: 86 },
+    { name: 'AdonisJS', proficiency: 78 },
     { name: 'PHP', proficiency: 84 },
     { name: 'Node.js', proficiency: 88 },
     { name: 'REST APIs', proficiency: 90 },
@@ -70,6 +92,9 @@ const fallbackSkills = {
   ],
   'Tools & DevOps': [
     { name: 'Git', proficiency: 88 },
+    { name: 'Bitbucket', proficiency: 84 },
+    { name: 'GitHub', proficiency: 86 },
+    { name: 'Jira', proficiency: 80 },
     { name: 'CI/CD Workflows', proficiency: 82 },
     { name: 'AWS', proficiency: 74 },
     { name: 'Cursor & ChatGPT', proficiency: 90 },
@@ -80,32 +105,48 @@ const fallbackProjects = [
   {
     title: 'MyShore Platform Contributions',
     description:
-      'Contributed to full-stack client and staff management features, production support workflows, database migrations, and release processes for a business platform.',
+      'Contributed full-stack features for client and staff management workflows, including operational support, database changes, and release coordination for a business platform.',
+    impact: 'Supported real production workflows across client, staff, database, and deployment areas.',
     tech_stack: ['React.js', 'Node.js', 'MySQL', 'REST APIs', 'CI/CD'],
     featured: true,
   },
   {
     title: 'Full-Stack Portfolio API',
     description:
-      'Laravel and MySQL API powering portfolio profile data, categorized skills, project records, and validated contact form submissions.',
+      'Built a Laravel and MySQL API for profile data, categorized skills, project records, and validated contact form submissions.',
+    impact: 'Turns static portfolio content into API-backed, maintainable data.',
     tech_stack: ['Laravel', 'PHP', 'MySQL', 'REST APIs'],
     featured: true,
   },
   {
     title: 'Capstone Mobile Application',
     description:
-      'Led a university capstone team and built mobile frontend features while managing progress, risks, and delivery milestones.',
+      'Led a university capstone team while building mobile frontend features and managing delivery progress, risks, and milestones.',
+    impact: 'Combined hands-on React Native development with team delivery leadership.',
     tech_stack: ['React Native', 'Project Leadership', 'Frontend Development'],
     featured: false,
   },
 ]
 
 const credibilitySignals = [
-  'Available for full-stack work',
-  '2+ years production experience',
-  'Laravel + React + Node + MySQL',
-  'Deployment and production support experience',
+  'Available for full-stack roles and project work',
+  '2+ years building and supporting production workflows',
+  'React + Laravel + Node + MySQL delivery stack',
+  'Release, migration, and production support experience',
 ]
+
+const proofPoints = [
+  { value: '2+', label: 'Years Experience' },
+  { value: '4', label: 'Core Stacks' },
+  { value: '24/7', label: 'Support Mindset' },
+]
+
+const skillGroupNotes = {
+  Frontend: 'Interfaces, component workflows, and responsive product screens.',
+  Backend: 'APIs, server-side workflows, validation, and integrations.',
+  Database: 'Schema changes, queries, migrations, and relational data modeling.',
+  'Tools & DevOps': 'Version control, release support, deployment checks, and AI-assisted delivery.',
+}
 
 const initialContactForm = {
   name: '',
@@ -183,11 +224,22 @@ function App() {
     return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${subject}&body=${body}`
   }, [contactForm, email])
 
+  const handleContactSubmit = (event) => {
+    event.preventDefault()
+    window.open(contactComposeHref, '_blank', 'noopener,noreferrer')
+  }
+
   return (
-    <main className="relative min-h-screen overflow-hidden">
+    <main id="main-content" className="relative min-h-screen overflow-hidden">
+      <a href="#top" className="skip-link">
+        Skip to portfolio
+      </a>
       <div className="aurora" aria-hidden="true" />
-      <nav className="sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between border-b border-white/10 bg-slate-950/60 px-6 py-5 text-sm text-slate-300 backdrop-blur-xl lg:px-8">
-        <a href="#top" className="font-semibold tracking-[0.35em] text-white">
+      <nav
+        aria-label="Portfolio navigation"
+        className="sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between border-b border-white/10 bg-slate-950/60 px-6 py-5 text-sm text-slate-300 backdrop-blur-xl lg:px-8"
+      >
+        <a href="#top" className="font-semibold tracking-[0.35em] text-white" aria-label="Back to top">
           JCP
         </a>
         <div className="hidden items-center gap-6 md:flex">
@@ -201,13 +253,15 @@ function App() {
 
       <section id="top" className="section-reveal mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pt-20">
         <div className="relative z-10">
-          <p className="mb-4 inline-flex rounded-full border border-purple-300/30 bg-purple-300/10 px-4 py-2 text-sm font-medium text-purple-100">
-            {profile.location}
+          <p className="mb-4 inline-flex rounded-full border border-purple-300/30 bg-purple-300/10 px-4 py-2 text-sm font-medium text-purple-100 shadow-lg shadow-purple-950/20">
+            Full-stack developer based in {profile.location}
           </p>
           <h1 className="max-w-4xl text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
-          <p className="mt-5 text-2xl font-semibold text-purple-100">{profile.role}</p>
+          <p className="mt-5 max-w-3xl text-2xl font-semibold leading-tight text-purple-100 sm:text-3xl">
+            Building reliable web apps from polished interfaces to production-ready APIs.
+          </p>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">{profile.summary}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
@@ -232,7 +286,7 @@ function App() {
               View LinkedIn
             </a>
           </div>
-          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+          <div className="mt-8 grid gap-3 sm:grid-cols-2" aria-label="Portfolio credibility signals">
             {credibilitySignals.map((signal) => (
               <SignalCard key={signal}>{signal}</SignalCard>
             ))}
@@ -248,14 +302,11 @@ function App() {
               className="mx-auto h-48 w-48 rounded-full border border-purple-200/40 bg-slate-900 object-cover object-[center_18%] shadow-2xl shadow-purple-950/40"
             />
             <div className="mt-5 text-center">
-              <p className="text-sm uppercase tracking-[0.35em] text-purple-100">Full-Stack Developer</p>
+              <p className="text-sm uppercase tracking-[0.35em] text-purple-100">{profile.role}</p>
+              <p className="mt-2 text-sm text-slate-400">React, Laravel, Node.js, REST APIs, and MySQL</p>
             </div>
             <div className="mt-6 grid grid-cols-3 gap-3 text-center">
-              {[
-                ['2+', 'Years'],
-                ['4', 'Core Stacks'],
-                ['24/7', 'Support Mindset'],
-              ].map(([value, label]) => (
+              {proofPoints.map(({ value, label }) => (
                 <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.06] p-3">
                   <p className="text-xl font-black text-purple-100">{value}</p>
                   <p className="mt-1 text-xs text-slate-400">{label}</p>
@@ -275,11 +326,17 @@ function App() {
         </aside>
       </section>
 
-      <Section id="skills" eyebrow="Technical Stack" title="Skills I Use To Build Full-Stack Products">
+      <Section
+        id="skills"
+        eyebrow="Technical Stack"
+        title="Skills I Use To Build Full-Stack Products"
+        description="A practical stack for product screens, API workflows, database-backed features, and reliable releases."
+      >
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {skillGroups.map(([category, items]) => (
-            <article key={category} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+            <article key={category} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6 transition hover:-translate-y-1 hover:border-purple-300/40 hover:bg-white/[0.07]">
               <h3 className="text-xl font-bold text-white">{category}</h3>
+              <p className="mt-3 min-h-12 text-sm leading-6 text-slate-400">{skillGroupNotes[category]}</p>
               <div className="mt-5 space-y-4">
                 {items.map((skill) => (
                   <div key={`${category}-${skill.name}`}>
@@ -301,10 +358,15 @@ function App() {
         </div>
       </Section>
 
-      <Section id="experience" eyebrow="Experience" title="Practical Delivery Across Frontend, Backend, And Releases">
+      <Section
+        id="experience"
+        eyebrow="Experience"
+        title="Practical Delivery Across Frontend, Backend, And Releases"
+        description="Experience shaped by building features, supporting operations, and helping releases move from staging to production."
+      >
         <div className="grid gap-6 lg:grid-cols-2">
           {profile.experience?.map((item) => (
-            <article key={`${item.company}-${item.role}`} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+            <article key={`${item.company}-${item.role}`} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6 transition hover:-translate-y-1 hover:border-purple-300/40 hover:bg-white/[0.07]">
               <p className="text-sm font-semibold text-purple-100">{item.period}</p>
               <h3 className="mt-2 text-2xl font-bold text-white">{item.role}</h3>
               <p className="mt-1 text-slate-300">
@@ -323,10 +385,15 @@ function App() {
         </div>
       </Section>
 
-      <Section id="projects" eyebrow="Projects" title="Selected Work And Build Experience">
+      <Section
+        id="projects"
+        eyebrow="Projects"
+        title="Selected Work And Build Experience"
+        description="A mix of production contributions, API work, and academic delivery that shows how I approach real product work."
+      >
         <div className="grid gap-6 lg:grid-cols-3">
           {projects.map((project) => (
-            <article key={project.title} className="flex rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+            <article key={project.title} className="flex rounded-3xl border border-white/10 bg-white/[0.05] p-6 transition hover:-translate-y-1 hover:border-purple-300/40 hover:bg-white/[0.07]">
               <div className="flex flex-1 flex-col">
                 {project.featured && (
                   <span className="mb-4 w-fit rounded-full bg-purple-300/10 px-3 py-1 text-xs font-semibold text-purple-100">
@@ -336,6 +403,12 @@ function App() {
                 <ProjectPreview title={project.title} techStack={project.tech_stack ?? []} />
                 <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                 <p className="mt-4 flex-1 leading-7 text-slate-300">{project.description}</p>
+                {project.impact && (
+                  <p className="mt-5 rounded-2xl border border-purple-300/20 bg-purple-300/[0.08] p-4 text-sm font-medium leading-6 text-purple-50">
+                    <span className="block text-xs uppercase tracking-[0.25em] text-purple-200/80">Impact</span>
+                    <span className="mt-2 block">{project.impact}</span>
+                  </p>
+                )}
                 <div className="mt-6 flex flex-wrap gap-2">
                   {(project.tech_stack ?? []).map((tech) => (
                     <span key={tech} className="rounded-full border border-slate-700 px-3 py-1 text-sm text-slate-300">
@@ -361,7 +434,12 @@ function App() {
         </div>
       </Section>
 
-      <Section id="education" eyebrow="Education" title="Academic Foundation">
+      <Section
+        id="education"
+        eyebrow="Education"
+        title="Academic Foundation"
+        description="Formal IT training backed by academic recognition and practical capstone leadership."
+      >
         <div className="grid gap-5 md:grid-cols-2">
           {profile.education?.map((item) => (
             <article key={item.school} className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
@@ -374,7 +452,12 @@ function App() {
         </div>
       </Section>
 
-      <Section id="contact" eyebrow="Contact" title="Let's Build Something Useful">
+      <Section
+        id="contact"
+        eyebrow="Contact"
+        title="Let's Build Something Useful"
+        description="Reach out for full-stack development, API work, Laravel or React features, database-backed workflows, or production support."
+      >
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
             <h3 className="text-2xl font-bold text-white">Available for full-stack work</h3>
@@ -391,35 +474,38 @@ function App() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/[0.05] p-6">
+          <form
+            className="rounded-3xl border border-white/10 bg-white/[0.05] p-6"
+            aria-label="Contact form"
+            onSubmit={handleContactSubmit}
+          >
             <div className="grid gap-4 sm:grid-cols-2">
-              <Field label="Name" name="name" value={contactForm.name} onChange={handleContactChange} />
-              <Field label="Email" name="email" type="email" value={contactForm.email} onChange={handleContactChange} />
+              <Field label="Name" name="name" value={contactForm.name} onChange={handleContactChange} autoComplete="name" />
+              <Field label="Email" name="email" type="email" value={contactForm.email} onChange={handleContactChange} autoComplete="email" />
             </div>
             <Field label="Subject" name="subject" value={contactForm.subject} onChange={handleContactChange} />
             <Field label="Message" name="message" value={contactForm.message} onChange={handleContactChange} multiline />
-            <a
-              href={contactComposeHref}
-              target="_blank"
-              rel="noreferrer"
+            <button
+              type="submit"
               className="mt-5 inline-flex rounded-full bg-purple-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-purple-200"
             >
               Send Message
-            </a>
-          </div>
+            </button>
+          </form>
         </div>
       </Section>
     </main>
   )
 }
 
-function Section({ id, eyebrow, title, children }) {
+function Section({ id, eyebrow, title, description, children }) {
   return (
     <section id={id} className="section-reveal mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <p className="text-sm font-semibold uppercase tracking-[0.3em] text-purple-100">{eyebrow}</p>
       <h2 className="mt-3 max-w-4xl text-3xl font-black tracking-tight text-white sm:text-4xl">
         {title}
       </h2>
+      {description && <p className="mt-4 max-w-3xl text-base leading-7 text-slate-400">{description}</p>}
       <div className="mt-8">{children}</div>
     </section>
   )
@@ -473,15 +559,17 @@ function SocialLink({ label, href, download = false }) {
   )
 }
 
-function Field({ label, name, value, onChange, type = 'text', multiline = false }) {
+function Field({ label, name, value, onChange, type = 'text', multiline = false, autoComplete }) {
+  const fieldId = `contact-${name}`
   const inputClasses =
     'mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-purple-300'
 
   return (
-    <label className="mt-4 block text-sm font-medium text-slate-200">
+    <label htmlFor={fieldId} className="mt-4 block text-sm font-medium text-slate-200">
       {label}
       {multiline ? (
         <textarea
+          id={fieldId}
           required
           className={`${inputClasses} min-h-36 resize-y`}
           name={name}
@@ -490,10 +578,12 @@ function Field({ label, name, value, onChange, type = 'text', multiline = false 
         />
       ) : (
         <input
+          id={fieldId}
           required
           className={inputClasses}
           name={name}
           type={type}
+          autoComplete={autoComplete}
           value={value}
           onChange={onChange}
         />

@@ -1,34 +1,94 @@
-James Christian Pineda
+JAMES CHRISTIAN PINEDA
 Full-Stack Developer
-Central Luzon, Philippines
 
+Phone: 09657210723
 Email: pinedajames679@gmail.com
-LinkedIn: https://www.linkedin.com/in/james-christian-pineda/
-GitHub: https://github.com/namjameseu
+LinkedIn: https://www.linkedin.com/in/james-christian-pineda
+Address: 121 Purok 2, Pandacaqui, Mexico, Pampanga 2021
 
-SUMMARY
-Full-stack developer building practical web applications with React, Laravel, Node.js, REST APIs, and MySQL. Experienced in production support, CI/CD workflows, database migrations, deployments, and AI-assisted development.
-
-CORE SKILLS
-- Frontend: React.js, TypeScript, Tailwind CSS, Material UI, Ant Design
-- Backend: Laravel, PHP, Node.js, REST APIs
-- Database: MySQL, PostgreSQL
-- Tools and DevOps: Git, CI/CD workflows, AWS, Cursor, ChatGPT
-
-EXPERIENCE
-Shore360, Inc. - Full-Stack Developer
-Feb 2024 - Present | Clark, Pampanga, Philippines
-- Developed and maintained full-stack features for client and staff management workflows.
-- Built and supported React, Node.js, MySQL, and REST API features.
-- Managed staging and production deployments, migrations, and rollback support.
-- Used AI-assisted workflows to speed up debugging, SQL optimization, documentation, and prototyping.
-
-Pampanga State University - Team Leader / Frontend Mobile Developer
-May 2023 - Dec 2023 | Mexico, Pampanga
-- Led a capstone team through planning, risk tracking, and delivery.
-- Built mobile frontend features with React Native.
-
+================================================================================
 EDUCATION
-Pampanga State University - Mexico Campus
-B.S. in Information Technology, Cum Laude
-2020 - 2024
+================================================================================
+
+Pampanga State University - Mexico Campus                         2020 - 2024
+B.S. in Information Technology (Cum Laude)                    Mexico, Pampanga
+
+Systems Plus College Foundation - Miranda Branch                   2018 - 2020
+Senior High School (With High Honors)                      Angeles City, Pampanga
+
+Don Jesus Gonzales High School                                     2014 - 2018
+Junior High School (With Honors)                              Mexico, Pampanga
+
+================================================================================
+EXPERIENCE
+================================================================================
+
+Shore360, Inc.                                                  Feb 2024 - Present
+Full-Stack Developer                                  Clark, Pampanga, Philippines
+
+- Contributed to the development and enhancement of MyShore, a platform for
+  client and staff management.
+- Developed and maintained full-stack features using React.js, Node.js, MySQL,
+  and REST APIs.
+- Leveraged AI-assisted development tools such as Cursor and ChatGPT to
+  accelerate debugging, code generation, refactoring, documentation, and feature
+  prototyping.
+- Improved development efficiency by using AI-assisted workflows for
+  troubleshooting, SQL query optimization, and resolving staging/production
+  issues.
+- Followed and maintained existing CI/CD workflows using Bitbucket/GitHub
+  Pipelines for automated build and deployment processes.
+- Managed staging and production deployments for React and Node.js applications.
+- Executed database migrations during releases to ensure schema consistency
+  across environments.
+- Performed production rollbacks when necessary to minimize downtime and
+  maintain system stability.
+- Suggested and implemented process improvements to streamline workflows and
+  enhance user experience.
+- Collaborated with senior developers and cross-functional teams to troubleshoot
+  issues and optimize system performance.
+
+Capstone/Thesis Project                                           May 2023 - Dec 2023
+Team Leader / Frontend Mobile Developer              Pampanga State University
+
+- Led a team to design and implement a mobile app.
+- Managed project progress, tracked risks, and resolved issues promptly.
+- Balanced leadership with hands-on React Native development.
+
+VXI                                                                 Jan 2020
+Intern                                                 Clark, Pampanga, Philippines
+
+- Assisted applicants with digital registration, ensuring smooth onboarding.
+
+================================================================================
+SKILLS
+================================================================================
+
+Programming & Frameworks
+JavaScript, TypeScript, React.js, Next.js, React Native, Laravel, AdonisJS,
+Node.js, PHP, REST API
+
+Frontend/UI
+HTML, CSS, Tailwind, Material-UI, Ant Design, Bootstrap
+
+Tools & DevOps
+Git, Bitbucket, GitHub, Jira, AWS, MySQL, PostgreSQL, CI/CD Workflows,
+Deployment Management, Environment Configuration, Cursor, ChatGPT,
+AI-Assisted Development
+
+Other
+Hardware/Software Installation, Troubleshooting
+
+================================================================================
+REFERENCES
+================================================================================
+
+Eriz Gole Cruz
+Project Manager, Shore360, Inc.
+Phone: 09913910009
+Email: golederp23@gmail.com
+
+John Lloyd Cabriana
+Senior Full-Stack Developer, Shore360, Inc.
+Phone: 09989969219
+Email: johnlloyd.cabriana@gmail.com

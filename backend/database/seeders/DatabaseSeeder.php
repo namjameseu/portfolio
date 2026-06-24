@@ -18,20 +18,25 @@ class DatabaseSeeder extends Seeder
     {
         $skills = [
             ['name' => 'React.js', 'category' => 'Frontend', 'proficiency' => 92, 'display_order' => 1],
-            ['name' => 'TypeScript', 'category' => 'Frontend', 'proficiency' => 86, 'display_order' => 2],
-            ['name' => 'Tailwind CSS', 'category' => 'Frontend', 'proficiency' => 88, 'display_order' => 3],
-            ['name' => 'Material UI', 'category' => 'Frontend', 'proficiency' => 82, 'display_order' => 4],
-            ['name' => 'Ant Design', 'category' => 'Frontend', 'proficiency' => 80, 'display_order' => 5],
+            ['name' => 'Next.js', 'category' => 'Frontend', 'proficiency' => 82, 'display_order' => 2],
+            ['name' => 'TypeScript', 'category' => 'Frontend', 'proficiency' => 86, 'display_order' => 3],
+            ['name' => 'Tailwind CSS', 'category' => 'Frontend', 'proficiency' => 88, 'display_order' => 4],
+            ['name' => 'Material UI', 'category' => 'Frontend', 'proficiency' => 82, 'display_order' => 5],
+            ['name' => 'Ant Design', 'category' => 'Frontend', 'proficiency' => 80, 'display_order' => 6],
             ['name' => 'Laravel', 'category' => 'Backend', 'proficiency' => 86, 'display_order' => 1],
-            ['name' => 'PHP', 'category' => 'Backend', 'proficiency' => 84, 'display_order' => 2],
-            ['name' => 'Node.js', 'category' => 'Backend', 'proficiency' => 88, 'display_order' => 3],
-            ['name' => 'REST APIs', 'category' => 'Backend', 'proficiency' => 90, 'display_order' => 4],
+            ['name' => 'AdonisJS', 'category' => 'Backend', 'proficiency' => 78, 'display_order' => 2],
+            ['name' => 'PHP', 'category' => 'Backend', 'proficiency' => 84, 'display_order' => 3],
+            ['name' => 'Node.js', 'category' => 'Backend', 'proficiency' => 88, 'display_order' => 4],
+            ['name' => 'REST APIs', 'category' => 'Backend', 'proficiency' => 90, 'display_order' => 5],
             ['name' => 'MySQL', 'category' => 'Database', 'proficiency' => 88, 'display_order' => 1],
             ['name' => 'PostgreSQL', 'category' => 'Database', 'proficiency' => 76, 'display_order' => 2],
             ['name' => 'Git', 'category' => 'Tools & DevOps', 'proficiency' => 88, 'display_order' => 1],
-            ['name' => 'CI/CD Workflows', 'category' => 'Tools & DevOps', 'proficiency' => 82, 'display_order' => 2],
-            ['name' => 'AWS', 'category' => 'Tools & DevOps', 'proficiency' => 74, 'display_order' => 3],
-            ['name' => 'Cursor & ChatGPT', 'category' => 'Tools & DevOps', 'proficiency' => 90, 'display_order' => 4],
+            ['name' => 'Bitbucket', 'category' => 'Tools & DevOps', 'proficiency' => 84, 'display_order' => 2],
+            ['name' => 'GitHub', 'category' => 'Tools & DevOps', 'proficiency' => 86, 'display_order' => 3],
+            ['name' => 'Jira', 'category' => 'Tools & DevOps', 'proficiency' => 80, 'display_order' => 4],
+            ['name' => 'CI/CD Workflows', 'category' => 'Tools & DevOps', 'proficiency' => 82, 'display_order' => 5],
+            ['name' => 'AWS', 'category' => 'Tools & DevOps', 'proficiency' => 74, 'display_order' => 6],
+            ['name' => 'Cursor & ChatGPT', 'category' => 'Tools & DevOps', 'proficiency' => 90, 'display_order' => 7],
         ];
 
         foreach ($skills as $skill) {
@@ -44,7 +49,7 @@ class DatabaseSeeder extends Seeder
         $projects = [
             [
                 'title' => 'MyShore Platform Contributions',
-                'description' => 'Contributed to full-stack client and staff management features, production support workflows, database migrations, and release processes for a business platform.',
+                'description' => 'Contributed full-stack features for client and staff management workflows, including operational support, database changes, and release coordination for a business platform.',
                 'tech_stack' => ['React.js', 'Node.js', 'MySQL', 'REST APIs', 'CI/CD'],
                 'source_url' => null,
                 'demo_url' => null,
@@ -53,7 +58,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Full-Stack Portfolio API',
-                'description' => 'Laravel and MySQL API powering portfolio profile data, categorized skills, project records, and validated contact form submissions.',
+                'description' => 'Built a Laravel and MySQL API for profile data, categorized skills, project records, and validated contact form submissions.',
                 'tech_stack' => ['Laravel', 'PHP', 'MySQL', 'REST APIs'],
                 'source_url' => null,
                 'demo_url' => null,
@@ -62,7 +67,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Capstone Mobile Application',
-                'description' => 'Led a university capstone team and built mobile frontend features while managing progress, risks, and delivery milestones.',
+                'description' => 'Led a university capstone team while building mobile frontend features and managing delivery progress, risks, and milestones.',
                 'tech_stack' => ['React Native', 'Project Leadership', 'Frontend Development'],
                 'source_url' => null,
                 'demo_url' => null,
